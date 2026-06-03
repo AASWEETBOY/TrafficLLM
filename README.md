@@ -249,7 +249,7 @@ conda create -n trafficllm python=3.9
 
 conda activate trafficllm
 
-https://github.com/AASWEETBOY/TrafficLLM.git
+git clone https://github.com/AASWEETBOY/TrafficLLM.git
 cd TrafficLLM
 # Install required libraries
 pip install -r requirements.txt
