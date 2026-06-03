@@ -1,6 +1,6 @@
 # TrafficLLM 项目说明
 
-> 对 ZGC-LLM-Safety 的 TrafficLLM 进行增强
+> 对[ZGC-LLM-Safety 的 TrafficLLM](https://github.com/ZGC-LLM-Safety/TrafficLLM)进行增强
 
 TrafficLLM 是一个面向网络流量智能分析的多任务大语言模型系统，围绕加密流量场景构建了从数据处理、参数高效微调、模型评估到在线服务的完整工程闭环。项目基于 GLM-4 系列基座模型，采用 LoRA/PEFT 方式实现低成本适配，支持多类安全任务统一建模与部署。
 
