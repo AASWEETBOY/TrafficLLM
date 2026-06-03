@@ -1,0 +1,207 @@
+{
+  "meta": {
+    "seed": 42,
+    "samples_per_label": 3,
+    "task_name": "Botnet Detection",
+    "task_key": "BND",
+    "total_samples": 15,
+    "traffic_source": "*_test_with_label.jsonl"
+  },
+  "samples": [
+    {
+      "sample_id": "BND_0001",
+      "task_name": "Botnet Detection",
+      "task_key": "BND",
+      "user_input": {
+        "traffic_data": "<packet>: frame.encap_type: 1, frame.time: Jun 12, 2010 18:43:08.763934000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1276339388.763934000, frame.time_delta: 0.002837000, frame.time_relative: 83.354272000, frame.number: 9834, frame.len: 1434, frame.marked: 0, frame.protocols: eth:ethertype:ip:tcp, eth.dst: 00:e0:b1:87:f5:94, eth.dst_resolved: Alcatel-_87:f5:94, eth.src: 00:01:02:72:ab:55, eth.src_resolved: 3Com_72:ab:55, eth.type: 0x00000800, ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00000000, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 1420, ip.id: 0x00003cb9, ip.flags: 0x00004000, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 47, ip.proto: 6, ip.checksum: 0x00004f87, ip.checksum.status: 2, ip.src: 68.178.178.97, ip.dst: 192.168.2.112, tcp.srcport: 80, tcp.dstport: 2130, tcp.stream: 0, tcp.len: 1380, tcp.seq: 8789242, tcp.nxtseq: 8790622, tcp.ack: 7699, tcp.hdr_len: 20, tcp.flags: 0x00000010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 7504, tcp.window_size_scalefactor: -2, tcp.checksum: 0x0000df57, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 83.354272000, tcp.time_delta: 0.002837000, tcp.analysis.bytes_in_flight: 1380, tcp.analysis.push_bytes_sent: 24840."
+      },
+      "expected_output": {
+        "stage1_task_name": "Botnet Detection",
+        "stage1_task_key": "BND",
+        "stage2_answer": "IRC"
+      }
+    },
+    {
+      "sample_id": "BND_0002",
+      "task_name": "Botnet Detection",
+      "task_key": "BND",
+      "user_input": {
+        "traffic_data": "<packet>: frame.encap_type: 1, frame.time: Jun 12, 2010 17:21:28.169522000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1276334488.169522000, frame.time_delta: 0.003999000, frame.time_relative: 33.094210000, frame.number: 909, frame.len: 1434, frame.marked: 0, frame.protocols: eth:ethertype:ip:tcp:http:data, eth.dst: 00:e0:b1:87:f5:94, eth.dst_resolved: Alcatel-_87:f5:94, eth.src: 00:01:02:72:ab:55, eth.src_resolved: 3Com_72:ab:55, eth.type: 0x00000800, ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00000000, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 1420, ip.id: 0x00007ddf, ip.flags: 0x00004000, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 109, ip.proto: 6, ip.checksum: 0x0000fd60, ip.checksum.status: 2, ip.src: 97.74.104.201, ip.dst: 192.168.2.112, tcp.srcport: 80, tcp.dstport: 1827, tcp.stream: 0, tcp.len: 1380, tcp.seq: 803634, tcp.nxtseq: 805014, tcp.ack: 1201, tcp.hdr_len: 20, tcp.flags: 0x00000010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 64335, tcp.window_size_scalefactor: -2, tcp.checksum: 0x00008473, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 33.094210000, tcp.time_delta: 0.003999000, tcp.analysis.bytes_in_flight: 2760, tcp.analysis.push_bytes_sent: 5520."
+      },
+      "expected_output": {
+        "stage1_task_name": "Botnet Detection",
+        "stage1_task_key": "BND",
+        "stage2_answer": "IRC"
+      }
+    },
+    {
+      "sample_id": "BND_0003",
+      "task_name": "Botnet Detection",
+      "task_key": "BND",
+      "user_input": {
+        "traffic_data": "<packet>: frame.encap_type: 1, frame.time: Jun 12, 2010 17:07:26.277990000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1276333646.277990000, frame.time_delta: 0.002591000, frame.time_relative: 184.687811000, frame.number: 15452, frame.len: 1434, frame.marked: 0, frame.protocols: eth:ethertype:ip:tcp, eth.dst: 00:e0:b1:87:f5:94, eth.dst_resolved: Alcatel-_87:f5:94, eth.src: 00:01:02:72:ab:55, eth.src_resolved: 3Com_72:ab:55, eth.type: 0x00000800, ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00000000, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 1420, ip.id: 0x0000b556, ip.flags: 0x00004000, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 47, ip.proto: 6, ip.checksum: 0x0000d6e9, ip.checksum.status: 2, ip.src: 68.178.178.97, ip.dst: 192.168.2.112, tcp.srcport: 80, tcp.dstport: 1705, tcp.stream: 0, tcp.len: 1380, tcp.seq: 13711633, tcp.nxtseq: 13713013, tcp.ack: 14106, tcp.hdr_len: 20, tcp.flags: 0x00000010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 18224, tcp.window_size_scalefactor: -2, tcp.checksum: 0x00004525, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 184.687811000, tcp.time_delta: 0.002591000, tcp.analysis.bytes_in_flight: 1380, tcp.analysis.push_bytes_sent: 92460."
+      },
+      "expected_output": {
+        "stage1_task_name": "Botnet Detection",
+        "stage1_task_key": "BND",
+        "stage2_answer": "IRC"
+      }
+    },
+    {
+      "sample_id": "BND_0004",
+      "task_name": "Botnet Detection",
+      "task_key": "BND",
+      "user_input": {
+        "traffic_data": "<packet>: frame.encap_type: 1, frame.time: Oct  8, 2007 22:32:08.407911000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1191853928.407911000, frame.time_delta: 0.001591000, frame.time_relative: 2547.898029000, frame.number: 113318, frame.len: 60, frame.marked: 0, frame.protocols: eth:ethertype:ip:tcp, eth.dst: 00:55:22:af:c6:37, eth.dst_resolved: 00:55:22:af:c6:37, eth.src: 00:44:66:fc:29:af, eth.src_resolved: 00:44:66:fc:29:af, eth.type: 0x00000800, ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00000000, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 40, ip.id: 0x0000eff8, ip.flags: 0x00004000, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 127, ip.proto: 6, ip.checksum: 0x0000a088, ip.checksum.status: 2, ip.src: 172.16.2.2, ip.dst: 68.142.120.174, tcp.srcport: 2805, tcp.dstport: 80, tcp.stream: 0, tcp.len: 0, tcp.seq: 5434, tcp.nxtseq: 5434, tcp.ack: 94945180, tcp.hdr_len: 20, tcp.flags: 0x00000010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 17520, tcp.window_size_scalefactor: -2, tcp.checksum: 0x0000d4b1, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 2547.898029000, tcp.time_delta: 0.001591000."
+      },
+      "expected_output": {
+        "stage1_task_name": "Botnet Detection",
+        "stage1_task_key": "BND",
+        "stage2_answer": "normal"
+      }
+    },
+    {
+      "sample_id": "BND_0005",
+      "task_name": "Botnet Detection",
+      "task_key": "BND",
+      "user_input": {
+        "traffic_data": "<packet>: frame.encap_type: 1, frame.time: Jun 13, 2010 10:23:31.657209000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1276395811.657209000, frame.time_delta: 0.001284000, frame.time_relative: 0.462101000, frame.number: 22, frame.len: 60, frame.marked: 0, frame.protocols: eth:ethertype:ip:tcp, eth.dst: 00:e0:b1:87:f5:94, eth.dst_resolved: Alcatel-_87:f5:94, eth.src: 00:11:25:b9:a7:ed, eth.src_resolved: Ibm_b9:a7:ed, eth.type: 0x00000800, ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00000000, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 40, ip.id: 0x00000a73, ip.flags: 0x00004000, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 128, ip.proto: 6, ip.checksum: 0x0000e227, ip.checksum.status: 2, ip.src: 192.168.2.106, ip.dst: 72.233.2.58, tcp.srcport: 3344, tcp.dstport: 80, tcp.stream: 0, tcp.len: 0, tcp.seq: 76, tcp.nxtseq: 76, tcp.ack: 14620, tcp.hdr_len: 20, tcp.flags: 0x00000010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 17520, tcp.window_size_scalefactor: -2, tcp.checksum: 0x000029c2, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 0.462101000, tcp.time_delta: 0.001284000."
+      },
+      "expected_output": {
+        "stage1_task_name": "Botnet Detection",
+        "stage1_task_key": "BND",
+        "stage2_answer": "normal"
+      }
+    },
+    {
+      "sample_id": "BND_0006",
+      "task_name": "Botnet Detection",
+      "task_key": "BND",
+      "user_input": {
+        "traffic_data": "<packet>: frame.encap_type: 1, frame.time: Jun 12, 2010 16:47:34.043210000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1276332454.043210000, frame.time_delta: 0.001225000, frame.time_relative: 1.813048000, frame.number: 14, frame.len: 60, frame.marked: 0, frame.protocols: eth:ethertype:ip:tcp, eth.dst: 00:e0:b1:87:f5:94, eth.dst_resolved: Alcatel-_87:f5:94, eth.src: 00:02:55:7f:70:de, eth.src_resolved: Ibm_7f:70:de, eth.type: 0x00000800, ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00000000, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 40, ip.id: 0x0000a120, ip.flags: 0x00004000, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 128, ip.proto: 6, ip.checksum: 0x0000273b, ip.checksum.status: 2, ip.src: 192.168.4.119, ip.dst: 204.13.161.71, tcp.srcport: 4774, tcp.dstport: 443, tcp.stream: 0, tcp.len: 0, tcp.seq: 345, tcp.nxtseq: 345, tcp.ack: 6431, tcp.hdr_len: 20, tcp.flags: 0x00000010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 17520, tcp.window_size_scalefactor: -2, tcp.checksum: 0x00009cc0, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 1.813048000, tcp.time_delta: 0.001225000."
+      },
+      "expected_output": {
+        "stage1_task_name": "Botnet Detection",
+        "stage1_task_key": "BND",
+        "stage2_answer": "normal"
+      }
+    },
+    {
+      "sample_id": "BND_0007",
+      "task_name": "Botnet Detection",
+      "task_key": "BND",
+      "user_input": {
+        "traffic_data": "<packet>: frame.encap_type: 1, frame.time: Aug 15, 2011 23:04:45.797950000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1313420685.797950000, frame.time_delta: 0.000655000, frame.time_relative: 1.631205000, frame.number: 353, frame.len: 60, frame.marked: 0, frame.protocols: eth:ethertype:ip:tcp, eth.dst: 00:1e:49:db:19:c3, eth.dst_resolved: Cisco_db:19:c3, eth.src: 08:00:27:b5:b7:19, eth.src_resolved: PcsCompu_b5:b7:19, eth.type: 0x00000800, ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00000000, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 40, ip.id: 0x0000527d, ip.flags: 0x00004000, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 128, ip.proto: 6, ip.checksum: 0x00005aa9, ip.checksum.status: 2, ip.src: 147.32.84.160, ip.dst: 209.85.148.147, tcp.srcport: 1752, tcp.dstport: 80, tcp.stream: 0, tcp.len: 0, tcp.seq: 615, tcp.nxtseq: 615, tcp.ack: 190683, tcp.hdr_len: 20, tcp.flags: 0x00000010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 64350, tcp.window_size_scalefactor: -2, tcp.checksum: 0x00003d35, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 1.631205000, tcp.time_delta: 0.000655000."
+      },
+      "expected_output": {
+        "stage1_task_name": "Botnet Detection",
+        "stage1_task_key": "BND",
+        "stage2_answer": "Virut"
+      }
+    },
+    {
+      "sample_id": "BND_0008",
+      "task_name": "Botnet Detection",
+      "task_key": "BND",
+      "user_input": {
+        "traffic_data": "<packet>: frame.encap_type: 1, frame.time: Aug 15, 2011 22:58:38.227494000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1313420318.227494000, frame.time_delta: 0.050336000, frame.time_relative: 3.655264000, frame.number: 34, frame.len: 113, frame.marked: 0, frame.protocols: eth:ethertype:ip:tcp:ssl, eth.dst: 00:1e:49:db:19:c3, eth.dst_resolved: Cisco_db:19:c3, eth.src: 08:00:27:b5:b7:19, eth.src_resolved: PcsCompu_b5:b7:19, eth.type: 0x00000800, ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00000000, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 99, ip.id: 0x00000d41, ip.flags: 0x00004000, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 128, ip.proto: 6, ip.checksum: 0x00008593, ip.checksum.status: 2, ip.src: 147.32.84.160, ip.dst: 212.117.171.138, tcp.srcport: 1357, tcp.dstport: 65500, tcp.stream: 0, tcp.len: 59, tcp.seq: 4739, tcp.nxtseq: 4798, tcp.ack: 342, tcp.hdr_len: 20, tcp.flags: 0x00000018, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 1, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······AP···, tcp.window_size: 63899, tcp.window_size_scalefactor: -2, tcp.checksum: 0x00005bee, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 3.655264000, tcp.time_delta: 0.050336000, tcp.analysis.bytes_in_flight: 59, tcp.analysis.push_bytes_sent: 59."
+      },
+      "expected_output": {
+        "stage1_task_name": "Botnet Detection",
+        "stage1_task_key": "BND",
+        "stage2_answer": "Virut"
+      }
+    },
+    {
+      "sample_id": "BND_0009",
+      "task_name": "Botnet Detection",
+      "task_key": "BND",
+      "user_input": {
+        "traffic_data": "<packet>: frame.encap_type: 1, frame.time: Aug 15, 2011 22:58:50.000285000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1313420330.000285000, frame.time_delta: 0.007978000, frame.time_relative: 7.526623000, frame.number: 93, frame.len: 60, frame.marked: 0, frame.protocols: eth:ethertype:ip:tcp, eth.dst: 08:00:27:b5:b7:19, eth.dst_resolved: PcsCompu_b5:b7:19, eth.src: 00:1e:49:db:19:c3, eth.src_resolved: Cisco_db:19:c3, eth.type: 0x00000800, ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00000000, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 40, ip.id: 0x000025f1, ip.flags: 0x00004000, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 52, ip.proto: 6, ip.checksum: 0x0000b91e, ip.checksum.status: 2, ip.src: 212.117.171.138, ip.dst: 147.32.84.160, tcp.srcport: 65500, tcp.dstport: 1367, tcp.stream: 0, tcp.len: 0, tcp.seq: 7648, tcp.nxtseq: 7648, tcp.ack: 24102, tcp.hdr_len: 20, tcp.flags: 0x00000010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 58400, tcp.window_size_scalefactor: -2, tcp.checksum: 0x0000a527, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 7.526623000, tcp.time_delta: 0.007978000."
+      },
+      "expected_output": {
+        "stage1_task_name": "Botnet Detection",
+        "stage1_task_key": "BND",
+        "stage2_answer": "Virut"
+      }
+    },
+    {
+      "sample_id": "BND_0010",
+      "task_name": "Botnet Detection",
+      "task_key": "BND",
+      "user_input": {
+        "traffic_data": "<packet>: frame.encap_type: 1, frame.time: Aug 10, 2011 20:24:59.218158000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1312979099.218158000, frame.time_delta: 1.912058000, frame.time_relative: 9825.620114000, frame.number: 50, frame.len: 60, frame.marked: 0, frame.protocols: eth:ethertype:ip:tcp:data, eth.dst: 08:00:27:b5:b7:19, eth.dst_resolved: PcsCompu_b5:b7:19, eth.src: 00:1e:49:db:19:c3, eth.src_resolved: Cisco_db:19:c3, eth.type: 0x00000800, ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00000000, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 41, ip.id: 0x0000bd9c, ip.flags: 0x00004000, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 52, ip.proto: 6, ip.checksum: 0x0000215e, ip.checksum.status: 2, ip.src: 212.117.171.138, ip.dst: 147.32.84.180, tcp.srcport: 65500, tcp.dstport: 3429, tcp.stream: 1, tcp.len: 1, tcp.seq: 1, tcp.nxtseq: 2, tcp.ack: 1, tcp.hdr_len: 20, tcp.flags: 0x00000018, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 1, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······AP···, tcp.window_size: 5840, tcp.window_size_scalefactor: -2, tcp.checksum: 0x000024fa, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 1.934952000, tcp.time_delta: 1.912058000, tcp.analysis.bytes_in_flight: 1, tcp.analysis.push_bytes_sent: 1."
+      },
+      "expected_output": {
+        "stage1_task_name": "Botnet Detection",
+        "stage1_task_key": "BND",
+        "stage2_answer": "Neris"
+      }
+    },
+    {
+      "sample_id": "BND_0011",
+      "task_name": "Botnet Detection",
+      "task_key": "BND",
+      "user_input": {
+        "traffic_data": "<packet>: frame.encap_type: 1, frame.time: Aug 10, 2011 17:25:31.813088000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1312968331.813088000, frame.time_delta: 0.000009000, frame.time_relative: 2.538577000, frame.number: 10, frame.len: 60, frame.marked: 0, frame.protocols: eth:ethertype:ip:tcp, eth.dst: 08:00:27:b5:b7:19, eth.dst_resolved: PcsCompu_b5:b7:19, eth.src: 00:1e:49:db:19:c3, eth.src_resolved: Cisco_db:19:c3, eth.type: 0x00000800, ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00000000, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 40, ip.id: 0x0000ea19, ip.flags: 0x00004000, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 53, ip.proto: 6, ip.checksum: 0x00009206, ip.checksum.status: 2, ip.src: 67.214.158.5, ip.dst: 147.32.84.180, tcp.srcport: 80, tcp.dstport: 1992, tcp.stream: 0, tcp.len: 0, tcp.seq: 601, tcp.nxtseq: 601, tcp.ack: 583, tcp.hdr_len: 20, tcp.flags: 0x00000011, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 1, tcp.flags.str: ·······A···F, tcp.window_size: 6984, tcp.window_size_scalefactor: -2, tcp.checksum: 0x0000bc0a, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 2.538577000, tcp.time_delta: 0.000009000."
+      },
+      "expected_output": {
+        "stage1_task_name": "Botnet Detection",
+        "stage1_task_key": "BND",
+        "stage2_answer": "Neris"
+      }
+    },
+    {
+      "sample_id": "BND_0012",
+      "task_name": "Botnet Detection",
+      "task_key": "BND",
+      "user_input": {
+        "traffic_data": "<packet>: frame.encap_type: 1, frame.time: Aug 10, 2011 19:31:45.016231000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1312975905.016231000, frame.time_delta: 0.000009000, frame.time_relative: 4.395555000, frame.number: 38, frame.len: 73, frame.marked: 0, frame.protocols: eth:ethertype:ip:udp:dns, eth.dst: 00:1e:49:db:19:c3, eth.dst_resolved: Cisco_db:19:c3, eth.src: 08:00:27:b5:b7:19, eth.src_resolved: PcsCompu_b5:b7:19, eth.type: 0x00000800, ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00000000, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 59, ip.id: 0x00001e75, ip.flags: 0x00000000, ip.flags.rb: 0, ip.flags.df: 0, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 128, ip.proto: 17, ip.checksum: 0x0000fc2c, ip.checksum.status: 2, ip.src: 147.32.84.180, ip.dst: 64.120.247.195, udp.srcport: 2079, udp.dstport: 53, udp.length: 39, udp.checksum: 0x00000b7f, udp.checksum.status: 2, udp.stream: 0."
+      },
+      "expected_output": {
+        "stage1_task_name": "Botnet Detection",
+        "stage1_task_key": "BND",
+        "stage2_answer": "Neris"
+      }
+    },
+    {
+      "sample_id": "BND_0013",
+      "task_name": "Botnet Detection",
+      "task_key": "BND",
+      "user_input": {
+        "traffic_data": "<packet>: frame.encap_type: 1, frame.time: Aug 13, 2011 19:44:54.216796000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1313235894.216796000, frame.time_delta: 0.015430000, frame.time_relative: 4.777894000, frame.number: 121, frame.len: 93, frame.marked: 0, frame.protocols: eth:ethertype:ip:tcp:data, eth.dst: 00:1e:49:db:19:c3, eth.dst_resolved: Cisco_db:19:c3, eth.src: 08:00:27:b5:b7:19, eth.src_resolved: PcsCompu_b5:b7:19, eth.type: 0x00000800, ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00000000, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 79, ip.id: 0x000008fe, ip.flags: 0x00004000, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 128, ip.proto: 6, ip.checksum: 0x00009345, ip.checksum.status: 2, ip.src: 147.32.84.170, ip.dst: 208.86.166.68, tcp.srcport: 3389, tcp.dstport: 61581, tcp.stream: 0, tcp.len: 39, tcp.seq: 3037, tcp.nxtseq: 3076, tcp.ack: 1714, tcp.hdr_len: 20, tcp.flags: 0x00000018, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 1, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······AP···, tcp.window_size: 64535, tcp.window_size_scalefactor: -2, tcp.checksum: 0x00003cd6, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 4.777894000, tcp.time_delta: 0.015430000, tcp.analysis.bytes_in_flight: 55, tcp.analysis.push_bytes_sent: 39."
+      },
+      "expected_output": {
+        "stage1_task_name": "Botnet Detection",
+        "stage1_task_key": "BND",
+        "stage2_answer": "RBot"
+      }
+    },
+    {
+      "sample_id": "BND_0014",
+      "task_name": "Botnet Detection",
+      "task_key": "BND",
+      "user_input": {
+        "traffic_data": "<packet>: frame.encap_type: 1, frame.time: Aug 14, 2011 14:29:45.782910000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1313303385.782910000, frame.time_delta: 0.000272000, frame.time_relative: 20886.544084000, frame.number: 266, frame.len: 60, frame.marked: 0, frame.protocols: eth:ethertype:ip:tcp, eth.dst: 00:1e:49:db:19:c3, eth.dst_resolved: Cisco_db:19:c3, eth.src: 08:00:27:b5:b7:19, eth.src_resolved: PcsCompu_b5:b7:19, eth.type: 0x00000800, ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00000000, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 40, ip.id: 0x00007ad6, ip.flags: 0x00000000, ip.flags.rb: 0, ip.flags.df: 0, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 128, ip.proto: 6, ip.checksum: 0x0000dec6, ip.checksum.status: 2, ip.src: 147.32.84.170, ip.dst: 178.77.71.27, tcp.srcport: 3389, tcp.dstport: 1469, tcp.stream: 1, tcp.len: 0, tcp.seq: 20150, tcp.nxtseq: 20150, tcp.ack: 2482819770, tcp.hdr_len: 20, tcp.flags: 0x00000004, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 0, tcp.flags.push: 0, tcp.flags.reset: 1, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·········R··, tcp.window_size: 0, tcp.window_size_scalefactor: -2, tcp.checksum: 0x0000ee44, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 20.424035000, tcp.time_delta: 0.000272000."
+      },
+      "expected_output": {
+        "stage1_task_name": "Botnet Detection",
+        "stage1_task_key": "BND",
+        "stage2_answer": "RBot"
+      }
+    },
+    {
+      "sample_id": "BND_0015",
+      "task_name": "Botnet Detection",
+      "task_key": "BND",
+      "user_input": {
+        "traffic_data": "<packet>: frame.encap_type: 1, frame.time: Aug 13, 2011 19:46:01.513115000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1313235961.513115000, frame.time_delta: 0.000419000, frame.time_relative: 1.272775000, frame.number: 45, frame.len: 117, frame.marked: 0, frame.protocols: eth:ethertype:ip:tcp:data, eth.dst: 00:1e:49:db:19:c3, eth.dst_resolved: Cisco_db:19:c3, eth.src: 08:00:27:b5:b7:19, eth.src_resolved: PcsCompu_b5:b7:19, eth.type: 0x00000800, ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00000000, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 103, ip.id: 0x00000b58, ip.flags: 0x00004000, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 128, ip.proto: 6, ip.checksum: 0x000090d3, ip.checksum.status: 2, ip.src: 147.32.84.170, ip.dst: 208.86.166.68, tcp.srcport: 3389, tcp.dstport: 27989, tcp.stream: 0, tcp.len: 63, tcp.seq: 1981, tcp.nxtseq: 2044, tcp.ack: 1375, tcp.hdr_len: 20, tcp.flags: 0x00000018, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 1, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······AP···, tcp.window_size: 63486, tcp.window_size_scalefactor: -2, tcp.checksum: 0x0000e341, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 1.272775000, tcp.time_delta: 0.000419000, tcp.analysis.bytes_in_flight: 254, tcp.analysis.push_bytes_sent: 63."
+      },
+      "expected_output": {
+        "stage1_task_name": "Botnet Detection",
+        "stage1_task_key": "BND",
+        "stage2_answer": "RBot"
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+acc: 1.0000000000
+precision: 1.0000000000
+recall: 1.0000000000
+f1: 1.0000000000
+metrics_json: {"accuracy": 1.0, "precision_weighted": 1.0, "recall_weighted": 1.0, "f1_weighted": 1.0}
+confusion matrix:
+ [[17  0  0  0  0]
+ [ 0 26  0  0  0]
+ [ 0  0 17  0  0]
+ [ 0  0  0 23  0]
+ [ 0  0  0  0 17]]
+classification report:
+               precision    recall  f1-score   support
+
+           0     1.0000    1.0000    1.0000        17
+           1     1.0000    1.0000    1.0000        26
+           2     1.0000    1.0000    1.0000        17
+           3     1.0000    1.0000    1.0000        23
+           4     1.0000    1.0000    1.0000        17
+
+    accuracy                         1.0000       100
+   macro avg     1.0000    1.0000    1.0000       100
+weighted avg     1.0000    1.0000    1.0000       100
+

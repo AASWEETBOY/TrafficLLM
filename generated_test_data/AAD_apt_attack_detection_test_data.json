@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "seed": 42,
+    "samples_per_label": 3,
+    "task_name": "APT Attack Detection",
+    "task_key": "AAD",
+    "total_samples": 6,
+    "traffic_source": "*_test_with_label.jsonl"
+  },
+  "samples": [
+    {
+      "sample_id": "AAD_0001",
+      "task_name": "APT Attack Detection",
+      "task_key": "AAD",
+      "user_input": {
+        "traffic_data": "<packet>: frame.encap_type: 1, frame.time: Jul 16, 2019 12:19:23.232388000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1563250763.232388000, frame.time_delta: 0.000066000, frame.time_relative: 27225.409377000, frame.number: 334434, frame.len: 4179, frame.marked: 0, frame.protocols: eth:ethertype:ip:tcp:tls, eth.dst: 00:0e:0c:b4:40:5e, eth.dst_resolved: Intel_b4:40:5e, eth.src: 08:00:27:7d:1f:56, eth.src_resolved: PcsCompu_7d:1f:56, eth.type: 0x0800, ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 4165, ip.id: 0x1400, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 64, ip.proto: 6, ip.checksum: 0x160b, ip.checksum.status: 2, ip.src: 192.168.3.29, ip.dst: 52.216.8.11, tcp.srcport: 49262, tcp.dstport: 443, tcp.stream: 2226, tcp.len: 4125, tcp.seq: 33289825, tcp.nxtseq: 33293950, tcp.ack: 3398, tcp.hdr_len: 20, tcp.flags: 0x0018, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 1, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······AP···, tcp.window_size: 37888, tcp.window_size_scalefactor: 512, tcp.checksum: 0x10e0, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 1.959706000, tcp.time_delta: 0.000066000, tcp.analysis.bytes_in_flight: 1984125, tcp.analysis.push_bytes_sent: 4125."
+      },
+      "expected_output": {
+        "stage1_task_name": "APT Attack Detection",
+        "stage1_task_key": "AAD",
+        "stage2_answer": "normal"
+      }
+    },
+    {
+      "sample_id": "AAD_0002",
+      "task_name": "APT Attack Detection",
+      "task_key": "AAD",
+      "user_input": {
+        "traffic_data": "<packet>: frame.encap_type: 1, frame.time: Jul 16, 2019 12:19:30.204032000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1563250770.204032000, frame.time_delta: 0.000002000, frame.time_relative: 27232.381021000, frame.number: 427840, frame.len: 60, frame.marked: 0, frame.protocols: eth:ethertype:ip:tcp, eth.dst: 08:00:27:7d:1f:56, eth.dst_resolved: PcsCompu_7d:1f:56, eth.src: 00:0e:0c:b4:40:5e, eth.src_resolved: Intel_b4:40:5e, eth.type: 0x0800, ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 40, ip.id: 0x9b0b, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 229, ip.proto: 6, ip.checksum: 0xfa1b, ip.checksum.status: 2, ip.src: 52.216.8.11, ip.dst: 192.168.3.29, tcp.srcport: 443, tcp.dstport: 49262, tcp.stream: 2226, tcp.len: 0, tcp.seq: 3398, tcp.nxtseq: 3398, tcp.ack: 157673814, tcp.hdr_len: 20, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 5240576, tcp.window_size_scalefactor: 256, tcp.checksum: 0xaf90, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 8.931350000, tcp.time_delta: 0.000002000."
+      },
+      "expected_output": {
+        "stage1_task_name": "APT Attack Detection",
+        "stage1_task_key": "AAD",
+        "stage2_answer": "normal"
+      }
+    },
+    {
+      "sample_id": "AAD_0003",
+      "task_name": "APT Attack Detection",
+      "task_key": "AAD",
+      "user_input": {
+        "traffic_data": "<packet>: frame.encap_type: 1, frame.time: Jul 16, 2019 12:21:37.940672000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1563250897.940672000, frame.time_delta: 0.000094000, frame.time_relative: 27360.117661000, frame.number: 576754, frame.len: 16475, frame.marked: 0, frame.protocols: eth:ethertype:ip:tcp:tls, eth.dst: 00:0e:0c:b4:40:5e, eth.dst_resolved: Intel_b4:40:5e, eth.src: 08:00:27:7d:1f:56, eth.src_resolved: PcsCompu_7d:1f:56, eth.type: 0x0800, ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 16461, ip.id: 0x29d2, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 64, ip.proto: 6, ip.checksum: 0x0fbd, ip.checksum.status: 2, ip.src: 192.168.3.29, ip.dst: 140.82.113.4, tcp.srcport: 43052, tcp.dstport: 443, tcp.stream: 2233, tcp.len: 16409, tcp.seq: 130410060, tcp.nxtseq: 130426469, tcp.ack: 5400, tcp.hdr_len: 32, tcp.flags: 0x0018, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 1, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······AP···, tcp.window_size: 50688, tcp.window_size_scalefactor: 512, tcp.checksum: 0x015c, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 30.902482000, tcp.time_delta: 0.000094000, tcp.analysis.bytes_in_flight: 3115337, tcp.analysis.push_bytes_sent: 16409."
+      },
+      "expected_output": {
+        "stage1_task_name": "APT Attack Detection",
+        "stage1_task_key": "AAD",
+        "stage2_answer": "normal"
+      }
+    },
+    {
+      "sample_id": "AAD_0004",
+      "task_name": "APT Attack Detection",
+      "task_key": "AAD",
+      "user_input": {
+        "traffic_data": "<packet>: frame.encap_type: 1, frame.time: Jul 18, 2019 11:28:42.464644000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1563420522.464644000, frame.time_delta: 0.445188000, frame.time_relative: 21341.851240000, frame.number: 1074649, frame.len: 331, frame.marked: 0, frame.protocols: eth:ethertype:ip:udp:dhcp, eth.dst: ff:ff:ff:ff:ff:ff, eth.dst_resolved: Broadcast, eth.src: 5c:f9:dd:f6:9e:36, eth.src_resolved: Dell_f6:9e:36, eth.type: 0x0800, ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 317, ip.id: 0x0000, ip.flags: 0x00, ip.flags.rb: 0, ip.flags.df: 0, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 64, ip.proto: 17, ip.checksum: 0x79b1, ip.checksum.status: 2, ip.src: 0.0.0.0, ip.dst: 255.255.255.255, udp.srcport: 68, udp.dstport: 67, udp.length: 297, udp.checksum: 0xdc51, udp.checksum.status: 2, udp.stream: 0."
+      },
+      "expected_output": {
+        "stage1_task_name": "APT Attack Detection",
+        "stage1_task_key": "AAD",
+        "stage2_answer": "APT"
+      }
+    },
+    {
+      "sample_id": "AAD_0005",
+      "task_name": "APT Attack Detection",
+      "task_key": "AAD",
+      "user_input": {
+        "traffic_data": "<packet>: frame.encap_type: 1, frame.time: Jul 18, 2019 10:30:22.286569000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1563417022.286569000, frame.time_delta: 0.011316000, frame.time_relative: 17841.673165000, frame.number: 1040751, frame.len: 66, frame.marked: 0, frame.protocols: eth:ethertype:ip:tcp, eth.dst: 08:00:27:7d:1f:56, eth.dst_resolved: PcsCompu_7d:1f:56, eth.src: 00:0e:0c:b4:40:5e, eth.src_resolved: Intel_b4:40:5e, eth.type: 0x0800, ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 52, ip.id: 0x3ae0, ip.flags: 0x00, ip.flags.rb: 0, ip.flags.df: 0, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 117, ip.proto: 6, ip.checksum: 0x8bf7, ip.checksum.status: 2, ip.src: 172.217.14.78, ip.dst: 192.168.3.29, tcp.srcport: 443, tcp.dstport: 37734, tcp.stream: 5353, tcp.len: 0, tcp.seq: 1279, tcp.nxtseq: 1279, tcp.ack: 2679, tcp.hdr_len: 32, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 67072, tcp.window_size_scalefactor: 256, tcp.checksum: 0xc1d4, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 30.012008000, tcp.time_delta: 0.011316000."
+      },
+      "expected_output": {
+        "stage1_task_name": "APT Attack Detection",
+        "stage1_task_key": "AAD",
+        "stage2_answer": "APT"
+      }
+    },
+    {
+      "sample_id": "AAD_0006",
+      "task_name": "APT Attack Detection",
+      "task_key": "AAD",
+      "user_input": {
+        "traffic_data": "<packet>: frame.encap_type: 7, frame.time: Sep 13, 2017 14:38:46.779701000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1505284726.779701000, frame.time_delta: 0.000016000, frame.time_relative: 66.775527000, frame.number: 46631, frame.len: 1400, frame.marked: 0, frame.protocols: raw:ip:tcp, ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 1400, ip.id: 0x996a, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 64, ip.proto: 6, ip.checksum: 0xb439, ip.checksum.status: 2, ip.src: 183.57.36.146, ip.dst: 10.11.2.6, tcp.srcport: 80, tcp.dstport: 37367, tcp.stream: 266, tcp.len: 1348, tcp.seq: 35219, tcp.nxtseq: 36567, tcp.ack: 343, tcp.hdr_len: 32, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 30080, tcp.window_size_scalefactor: 128, tcp.checksum: 0xdbaf, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 1.047297000, tcp.time_delta: 0.000016000, tcp.analysis.bytes_in_flight: 10836, tcp.analysis.push_bytes_sent: 6740."
+      },
+      "expected_output": {
+        "stage1_task_name": "APT Attack Detection",
+        "stage1_task_key": "AAD",
+        "stage2_answer": "APT"
+      }
+    }
+  ]
+}

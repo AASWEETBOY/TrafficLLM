@@ -1,0 +1,16 @@
+{
+    "ftps": 0,
+    "bittorrent": 1,
+    "spotify": 2,
+    "vimeo": 3,
+    "hangout": 4,
+    "sftp": 5,
+    "youtube": 6,
+    "icq": 7,
+    "netflix": 8,
+    "facebook": 9,
+    "skype": 10,
+    "voipbuster": 11,
+    "email": 12,
+    "aim": 13
+}

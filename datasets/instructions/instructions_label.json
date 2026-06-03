@@ -1,0 +1,7 @@
+{
+    "Malware Traffic Detection": 0,
+    "Botnet Detection": 1,
+    "Web Attack Detection": 2,
+    "APT Attack Detection": 3,
+    "Encrypted VPN Detection": 4
+}

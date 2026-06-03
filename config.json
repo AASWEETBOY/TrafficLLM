@@ -1,0 +1,19 @@
+{
+    "model_path": "models/glm-4-9b-chat/",
+    "peft_path": "models/glm-4-9b-chat-lora/",
+    "peft_set": {
+      "NLP": "instructions/checkpoint-12500",
+      "MTD": "ustc-tfc-2016_detection_packet/checkpoint-11000/",
+      "BND": "iscx-botnet-2014_detection_packet/checkpoint-14000/",
+      "WAD": "csic-2010_detection_packet/checkpoint-17000/",
+      "AAD": "dapt-2020_detection_packet/checkpoint-1500/",
+      "EVD": "iscx-vpn-2016_detection_packet/checkpoint-19500/"
+    },
+    "tasks": {
+      "Malware Traffic Detection": "MTD",
+      "Botnet Detection": "BND",
+      "Web Attack Detection": "WAD",
+      "APT Attack Detection": "AAD",
+      "Encrypted VPN Detection": "EVD"
+    }
+}

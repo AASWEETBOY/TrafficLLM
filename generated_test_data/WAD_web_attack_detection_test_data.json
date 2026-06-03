@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "seed": 42,
+    "samples_per_label": 3,
+    "task_name": "Web Attack Detection",
+    "task_key": "WAD",
+    "total_samples": 6,
+    "traffic_source": "*_test_with_label.jsonl"
+  },
+  "samples": [
+    {
+      "sample_id": "WAD_0001",
+      "task_name": "Web Attack Detection",
+      "task_key": "WAD",
+      "user_input": {
+        "traffic_data": "<packet>: {\"method\": \"POST\", \"url\": \"/tienda1/miembros/editar.jsp\", \"body\": \"modo=registro&login=manh&password=garrulador&nombre=Celina&apellidos=Bulnes+Rossier&email=ayed%40viajesinternacionales.bg&dni=60215339M&direccion=Camino+Alqueria+De+La+Campaneta%2C+138%2C+6%3FB&ciudad=Potes&cp=35280&provincia=M%E1laga&ntc=8549498493094362&B1=Registrar\"}."
+      },
+      "expected_output": {
+        "stage1_task_name": "Web Attack Detection",
+        "stage1_task_key": "WAD",
+        "stage2_answer": "benign"
+      }
+    },
+    {
+      "sample_id": "WAD_0002",
+      "task_name": "Web Attack Detection",
+      "task_key": "WAD",
+      "user_input": {
+        "traffic_data": "<packet>: {\"method\": \"POST\", \"url\": \"/tienda1/miembros/editar.jsp\", \"body\": \"modo=registro&login=heinen&password=tauj%EDa&nombre=Hernardo&apellidos=Barrera+Medio&email=negroni%40escarba.ki&dni=91650654R&direccion=C%2F+Almenas+98+5%3FF&ciudad=Monasterio+de+Vega&cp=45480&provincia=Burgos&ntc=1867101585349432&B1=Registrar\"}."
+      },
+      "expected_output": {
+        "stage1_task_name": "Web Attack Detection",
+        "stage1_task_key": "WAD",
+        "stage2_answer": "benign"
+      }
+    },
+    {
+      "sample_id": "WAD_0003",
+      "task_name": "Web Attack Detection",
+      "task_key": "WAD",
+      "user_input": {
+        "traffic_data": "<packet>: {\"method\": \"GET\", \"url\": \"/tienda1/publico/autenticar.jsp?modo=entrar&login=lesmeris&pwd=AL9Ol&remember=off&B1=Entrar\", \"body\": \"\"}."
+      },
+      "expected_output": {
+        "stage1_task_name": "Web Attack Detection",
+        "stage1_task_key": "WAD",
+        "stage2_answer": "benign"
+      }
+    },
+    {
+      "sample_id": "WAD_0004",
+      "task_name": "Web Attack Detection",
+      "task_key": "WAD",
+      "user_input": {
+        "traffic_data": "<packet>: {\"method\": \"POST\", \"url\": \"/tienda1/publico/anadir.jsp\", \"body\": \"id=2&nombre=Jam%F3n%27+Ib%E9ric-%27o&precio=85&cantidad=37&B1=A%F1adir+al+carrito\"}."
+      },
+      "expected_output": {
+        "stage1_task_name": "Web Attack Detection",
+        "stage1_task_key": "WAD",
+        "stage2_answer": "malicious"
+      }
+    },
+    {
+      "sample_id": "WAD_0005",
+      "task_name": "Web Attack Detection",
+      "task_key": "WAD",
+      "user_input": {
+        "traffic_data": "<packet>: {\"method\": \"GET\", \"url\": \"/tienda1/publico/registro.jsp?modo=registro&login=maxine&password=02n82re&nombre=Malaqu%EDas&apellidos=Bastida+Exiga&email=quaid%40hispadis.nf&dni=45992895W&direccion=Calle+Lourido+14+3E&ciudad=Moros&cp=06100&provincia=Guadalajaraparos%2522%2520style%3D%2522background%3Aurl%28javascript%3Aalert%28%27Paros%27%29%29&ntc=0897084317111205&B1=Registrar\", \"body\": \"\"}."
+      },
+      "expected_output": {
+        "stage1_task_name": "Web Attack Detection",
+        "stage1_task_key": "WAD",
+        "stage2_answer": "malicious"
+      }
+    },
+    {
+      "sample_id": "WAD_0006",
+      "task_name": "Web Attack Detection",
+      "task_key": "WAD",
+      "user_input": {
+        "traffic_data": "<packet>: {\"method\": \"GET\", \"url\": \"/tienda1/publico/autenticar.jsp?modo=entrar&login=arro&pwd=CarMinAR%3C%21--%23include+file%3D%22archivo_secreto%22+--%3E&remember=on&B1=Entrar\", \"body\": \"\"}."
+      },
+      "expected_output": {
+        "stage1_task_name": "Web Attack Detection",
+        "stage1_task_key": "WAD",
+        "stage2_answer": "malicious"
+      }
+    }
+  ]
+}

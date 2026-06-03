@@ -1,0 +1,558 @@
+{
+  "meta": {
+    "seed": 42,
+    "samples_per_label": 3,
+    "task_name": "Encrypted VPN Detection",
+    "task_key": "EVD",
+    "total_samples": 42,
+    "traffic_source": "*_test_with_label.jsonl"
+  },
+  "samples": [
+    {
+      "sample_id": "EVD_0001",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: May 23, 2015 03:48:55.956714000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1432324135.956714000, frame.time_delta: 0.000033000, frame.time_relative: 4.660567000, frame.number: 1781, frame.len: 52, frame.marked: 0, frame.protocols: raw:ip:tcp, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 52, ip.id: 0x19b1, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 64, ip.proto: 6, ip.checksum: 0x52f0, ip.checksum.status: 2, ip.src: 10.8.8.138, ip.dst: 204.236.238.164, tcp.srcport: 39212, tcp.dstport: 1371, tcp.stream: 0, tcp.completeness: 15, tcp.len: 0, tcp.seq: 450, tcp.nxtseq: 450, tcp.ack: 1542313, tcp.hdr_len: 32, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 211544, tcp.window_size_scalefactor: 4, tcp.checksum: 0x7160, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 4.660567000, tcp.time_delta: 0.000033000, tcp.analysis.bytes_in_flight: , tcp.analysis.push_bytes_sent: , tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "ftps"
+      }
+    },
+    {
+      "sample_id": "EVD_0002",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: May 23, 2015 03:43:19.578886000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1432323799.578886000, frame.time_delta: 0.000004000, frame.time_relative: 31.843275000, frame.number: 34748, frame.len: 1360, frame.marked: 0, frame.protocols: raw:ip:tcp, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 1360, ip.id: 0x1bd3, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 64, ip.proto: 6, ip.checksum: 0x4bb2, ip.checksum.status: 2, ip.src: 10.8.8.138, ip.dst: 204.236.238.164, tcp.srcport: 45849, tcp.dstport: 1781, tcp.stream: 0, tcp.completeness: 15, tcp.len: 1308, tcp.seq: 30292602, tcp.nxtseq: 30293910, tcp.ack: 4174, tcp.hdr_len: 32, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 40504, tcp.window_size_scalefactor: 4, tcp.checksum: 0xb7fb, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 31.843275000, tcp.time_delta: 0.000004000, tcp.analysis.bytes_in_flight: 200475, tcp.analysis.push_bytes_sent: 180504, tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "ftps"
+      }
+    },
+    {
+      "sample_id": "EVD_0003",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: May 23, 2015 03:43:07.808411000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1432323787.808411000, frame.time_delta: 0.000041000, frame.time_relative: 20.072800000, frame.number: 20321, frame.len: 64, frame.marked: 0, frame.protocols: raw:ip:tcp, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x08, ip.dsfield.dscp: 2, ip.dsfield.ecn: 0, ip.len: 64, ip.id: 0xc34b, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 38, ip.proto: 6, ip.checksum: 0xc341, ip.checksum.status: 2, ip.src: 204.236.238.164, ip.dst: 10.8.8.138, tcp.srcport: 1781, tcp.dstport: 45849, tcp.stream: 0, tcp.completeness: 15, tcp.len: 0, tcp.seq: 4174, tcp.nxtseq: 4174, tcp.ack: 17278915, tcp.hdr_len: 44, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 592000, tcp.window_size_scalefactor: 128, tcp.checksum: 0x91d3, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 20.072800000, tcp.time_delta: 0.000041000, tcp.analysis.bytes_in_flight: , tcp.analysis.push_bytes_sent: , tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "ftps"
+      }
+    },
+    {
+      "sample_id": "EVD_0004",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: Jun  4, 2015 20:34:41.852044000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1433421281.852044000, frame.time_delta: 0.000026000, frame.time_relative: 5.140349000, frame.number: 59, frame.len: 1360, frame.marked: 0, frame.protocols: raw:ip:tcp, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 1360, ip.id: 0x1af4, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 47, ip.proto: 6, ip.checksum: 0x6936, ip.checksum.status: 2, ip.src: 207.241.224.2, ip.dst: 10.8.8.130, tcp.srcport: 443, tcp.dstport: 51278, tcp.stream: 0, tcp.completeness: 15, tcp.len: 1308, tcp.seq: 34704, tcp.nxtseq: 36012, tcp.ack: 643, tcp.hdr_len: 32, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 31104, tcp.window_size_scalefactor: 128, tcp.checksum: 0x9b15, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 5.140349000, tcp.time_delta: 0.000026000, tcp.analysis.bytes_in_flight: 2616, tcp.analysis.push_bytes_sent: 28776, tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "bittorrent"
+      }
+    },
+    {
+      "sample_id": "EVD_0005",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: Jun  4, 2015 20:34:05.084466000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1433421245.084466000, frame.time_delta: 0.000027000, frame.time_relative: 8.945455000, frame.number: 3891, frame.len: 1360, frame.marked: 0, frame.protocols: raw:ip:tcp, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 1360, ip.id: 0x053c, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 46, ip.proto: 6, ip.checksum: 0x7340, ip.checksum.status: 2, ip.src: 207.241.236.176, ip.dst: 10.8.8.130, tcp.srcport: 80, tcp.dstport: 43515, tcp.stream: 0, tcp.completeness: 15, tcp.len: 1308, tcp.seq: 3410443, tcp.nxtseq: 3411751, tcp.ack: 1288, tcp.hdr_len: 32, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 36480, tcp.window_size_scalefactor: 128, tcp.checksum: 0xaa1b, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 8.945455000, tcp.time_delta: 0.000027000, tcp.analysis.bytes_in_flight: 2616, tcp.analysis.push_bytes_sent: 133416, tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "bittorrent"
+      }
+    },
+    {
+      "sample_id": "EVD_0006",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: Jun  4, 2015 20:35:14.005939000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1433421314.005939000, frame.time_delta: 0.000024000, frame.time_relative: 0.541551000, frame.number: 18, frame.len: 1360, frame.marked: 0, frame.protocols: raw:ip:tcp, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 1360, ip.id: 0xed8e, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 47, ip.proto: 6, ip.checksum: 0x9223, ip.checksum.status: 2, ip.src: 207.241.228.122, ip.dst: 10.8.8.130, tcp.srcport: 80, tcp.dstport: 59732, tcp.stream: 0, tcp.completeness: 15, tcp.len: 1308, tcp.seq: 6910, tcp.nxtseq: 8218, tcp.ack: 212, tcp.hdr_len: 32, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 30080, tcp.window_size_scalefactor: 128, tcp.checksum: 0x8d8e, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 0.541551000, tcp.time_delta: 0.000024000, tcp.analysis.bytes_in_flight: 1308, tcp.analysis.push_bytes_sent: 7848, tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "bittorrent"
+      }
+    },
+    {
+      "sample_id": "EVD_0007",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: May 24, 2015 23:42:19.569977000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1432482139.569977000, frame.time_delta: 0.000004000, frame.time_relative: 21.441255000, frame.number: 9250, frame.len: 52, frame.marked: 0, frame.protocols: raw:ip:tcp, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 52, ip.id: 0x3c23, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 64, ip.proto: 6, ip.checksum: 0x50a8, ip.checksum.status: 2, ip.src: 10.8.8.138, ip.dst: 24.156.130.203, tcp.srcport: 55782, tcp.dstport: 80, tcp.stream: 0, tcp.completeness: 15, tcp.len: 0, tcp.seq: 5713, tcp.nxtseq: 5713, tcp.ack: 7511188, tcp.hdr_len: 32, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 1217920, tcp.window_size_scalefactor: 128, tcp.checksum: 0xb4df, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 21.441255000, tcp.time_delta: 0.000004000, tcp.analysis.bytes_in_flight: , tcp.analysis.push_bytes_sent: , tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "spotify"
+      }
+    },
+    {
+      "sample_id": "EVD_0008",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: May 24, 2015 23:47:30.439495000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1432482450.439495000, frame.time_delta: 0.000006000, frame.time_relative: 332.310773000, frame.number: 20608, frame.len: 52, frame.marked: 0, frame.protocols: raw:ip:tcp, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 52, ip.id: 0x4bd2, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 64, ip.proto: 6, ip.checksum: 0x40f9, ip.checksum.status: 2, ip.src: 10.8.8.138, ip.dst: 24.156.130.203, tcp.srcport: 55782, tcp.dstport: 80, tcp.stream: 0, tcp.completeness: 15, tcp.len: 0, tcp.seq: 12149, tcp.nxtseq: 12149, tcp.ack: 16635694, tcp.hdr_len: 32, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 1217920, tcp.window_size_scalefactor: 128, tcp.checksum: 0x72ad, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 332.310773000, tcp.time_delta: 0.000006000, tcp.analysis.bytes_in_flight: , tcp.analysis.push_bytes_sent: , tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "spotify"
+      }
+    },
+    {
+      "sample_id": "EVD_0009",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: May 25, 2015 00:16:10.311410000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1432484170.311410000, frame.time_delta: 0.000065000, frame.time_relative: 2052.182688000, frame.number: 61373, frame.len: 1360, frame.marked: 0, frame.protocols: raw:ip:tcp, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x48, ip.dsfield.dscp: 18, ip.dsfield.ecn: 0, ip.len: 1360, ip.id: 0x894c, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 50, ip.proto: 6, ip.checksum: 0x0c1b, ip.checksum.status: 2, ip.src: 24.156.130.203, ip.dst: 10.8.8.138, tcp.srcport: 80, tcp.dstport: 55782, tcp.stream: 0, tcp.completeness: 15, tcp.len: 1308, tcp.seq: 51268679, tcp.nxtseq: 51269987, tcp.ack: 37511, tcp.hdr_len: 32, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 42240, tcp.window_size_scalefactor: 32, tcp.checksum: 0xf86e, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 2052.182688000, tcp.time_delta: 0.000065000, tcp.analysis.bytes_in_flight: 2616, tcp.analysis.push_bytes_sent: 2616, tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "spotify"
+      }
+    },
+    {
+      "sample_id": "EVD_0010",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: May 25, 2015 02:23:51.664619000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1432491831.664619000, frame.time_delta: 0.000036000, frame.time_relative: 299.989673000, frame.number: 73941, frame.len: 52, frame.marked: 0, frame.protocols: raw:ip:tcp, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 52, ip.id: 0x2951, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 64, ip.proto: 6, ip.checksum: 0x6029, ip.checksum.status: 2, ip.src: 10.8.8.138, ip.dst: 209.148.205.35, tcp.srcport: 42190, tcp.dstport: 443, tcp.stream: 0, tcp.completeness: 15, tcp.len: 0, tcp.seq: 1113, tcp.nxtseq: 1113, tcp.ack: 79376169, tcp.hdr_len: 32, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 1777536, tcp.window_size_scalefactor: 128, tcp.checksum: 0xf8ed, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 299.989673000, tcp.time_delta: 0.000036000, tcp.analysis.bytes_in_flight: , tcp.analysis.push_bytes_sent: , tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "vimeo"
+      }
+    },
+    {
+      "sample_id": "EVD_0011",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: May 25, 2015 02:20:57.371930000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1432491657.371930000, frame.time_delta: 0.000182000, frame.time_relative: 125.696984000, frame.number: 26530, frame.len: 1360, frame.marked: 0, frame.protocols: raw:ip:tcp:tls, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x48, ip.dsfield.dscp: 18, ip.dsfield.ecn: 0, ip.len: 1360, ip.id: 0xf067, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 50, ip.proto: 6, ip.checksum: 0xa1ae, ip.checksum.status: 2, ip.src: 209.148.205.35, ip.dst: 10.8.8.138, tcp.srcport: 443, tcp.dstport: 42190, tcp.stream: 0, tcp.completeness: 15, tcp.len: 1308, tcp.seq: 29037789, tcp.nxtseq: 29039097, tcp.ack: 1113, tcp.hdr_len: 32, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 17120, tcp.window_size_scalefactor: 32, tcp.checksum: 0xd0a3, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 125.696984000, tcp.time_delta: 0.000182000, tcp.analysis.bytes_in_flight: 2616, tcp.analysis.push_bytes_sent: 27937572, tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "vimeo"
+      }
+    },
+    {
+      "sample_id": "EVD_0012",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: May 25, 2015 02:18:14.538839000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1432491494.538839000, frame.time_delta: 0.000112000, frame.time_relative: 193.549011000, frame.number: 51113, frame.len: 1360, frame.marked: 0, frame.protocols: raw:ip:tcp, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x48, ip.dsfield.dscp: 18, ip.dsfield.ecn: 0, ip.len: 1360, ip.id: 0xa9c1, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 50, ip.proto: 6, ip.checksum: 0xe84e, ip.checksum.status: 2, ip.src: 209.148.205.41, ip.dst: 10.8.8.138, tcp.srcport: 443, tcp.dstport: 60124, tcp.stream: 0, tcp.completeness: 15, tcp.len: 1308, tcp.seq: 59411731, tcp.nxtseq: 59413039, tcp.ack: 1344, tcp.hdr_len: 32, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 17120, tcp.window_size_scalefactor: 32, tcp.checksum: 0xd995, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 193.549011000, tcp.time_delta: 0.000112000, tcp.analysis.bytes_in_flight: 15696, tcp.analysis.push_bytes_sent: 51591444, tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "vimeo"
+      }
+    },
+    {
+      "sample_id": "EVD_0013",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: Apr 15, 2015 04:30:19.089747000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1429043419.089747000, frame.time_delta: 0.000013000, frame.time_relative: 53.122422000, frame.number: 444, frame.len: 812, frame.marked: 0, frame.protocols: raw:ip:tcp:tls, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 812, ip.id: 0x1af5, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 64, ip.proto: 6, ip.checksum: 0xea01, ip.checksum.status: 2, ip.src: 10.8.0.10, ip.dst: 173.194.123.1, tcp.srcport: 49040, tcp.dstport: 443, tcp.stream: 0, tcp.completeness: 15, tcp.len: 760, tcp.seq: 94231, tcp.nxtseq: 94991, tcp.ack: 33803, tcp.hdr_len: 32, tcp.flags: 0x0018, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 1, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······AP···, tcp.window_size: 45184, tcp.window_size_scalefactor: 128, tcp.checksum: 0x3db4, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 53.122422000, tcp.time_delta: 0.000013000, tcp.analysis.bytes_in_flight: 2098, tcp.analysis.push_bytes_sent: 2098, tcp.segment: 443,444, tcp.segment.count: 2, tcp.reassembled.length: 2098, tls.record.content_type: 23, tls.record.version: 0x0303, tls.record.length: 2093."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "hangout"
+      }
+    },
+    {
+      "sample_id": "EVD_0014",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: Jun  4, 2015 03:58:55.898426000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1433361535.898426000, frame.time_delta: 0.000021000, frame.time_relative: 417.341042000, frame.number: 3320, frame.len: 1360, frame.marked: 0, frame.protocols: raw:ip:tcp, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 1360, ip.id: 0x877c, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 64, ip.proto: 6, ip.checksum: 0xf158, ip.checksum.status: 2, ip.src: 10.8.8.130, ip.dst: 216.58.210.14, tcp.srcport: 45184, tcp.dstport: 443, tcp.stream: 0, tcp.completeness: 12, tcp.len: 1308, tcp.seq: 719111, tcp.nxtseq: 720419, tcp.ack: 108313, tcp.hdr_len: 32, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 12595, tcp.window_size_scalefactor: -1, tcp.checksum: 0xc7b4, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 417.341042000, tcp.time_delta: 0.000021000, tcp.analysis.bytes_in_flight: 17004, tcp.analysis.push_bytes_sent: 22236, tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "hangout"
+      }
+    },
+    {
+      "sample_id": "EVD_0015",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: Jun  4, 2015 04:03:35.654967000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1433361815.654967000, frame.time_delta: 0.000101000, frame.time_relative: 498.555005000, frame.number: 3798, frame.len: 98, frame.marked: 0, frame.protocols: raw:ip:tcp:tls, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 98, ip.id: 0xa7be, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 64, ip.proto: 6, ip.checksum: 0x8e9e, ip.checksum.status: 2, ip.src: 10.8.8.178, ip.dst: 173.194.67.189, tcp.srcport: 57926, tcp.dstport: 443, tcp.stream: 0, tcp.completeness: 15, tcp.len: 46, tcp.seq: 149774, tcp.nxtseq: 149820, tcp.ack: 350092, tcp.hdr_len: 32, tcp.flags: 0x0018, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 1, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······AP···, tcp.window_size: 184832, tcp.window_size_scalefactor: 128, tcp.checksum: 0x7d77, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 498.555005000, tcp.time_delta: 0.000101000, tcp.analysis.bytes_in_flight: 46, tcp.analysis.push_bytes_sent: 46, tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: 23, tls.record.version: 0x0303, tls.record.length: 41."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "hangout"
+      }
+    },
+    {
+      "sample_id": "EVD_0016",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: May 23, 2015 03:25:16.398165000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1432322716.398165000, frame.time_delta: 0.000004000, frame.time_relative: 204.662164000, frame.number: 56424, frame.len: 1360, frame.marked: 0, frame.protocols: raw:ip:tcp:ssh, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 1360, ip.id: 0xd131, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 64, ip.proto: 6, ip.checksum: 0x6b73, ip.checksum.status: 2, ip.src: 10.8.8.138, ip.dst: 75.101.155.12, tcp.srcport: 43336, tcp.dstport: 22, tcp.stream: 0, tcp.completeness: 15, tcp.len: 1308, tcp.seq: 46264284, tcp.nxtseq: 46265592, tcp.ack: 250947, tcp.hdr_len: 32, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 211544, tcp.window_size_scalefactor: 4, tcp.checksum: 0x97e2, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 204.662164000, tcp.time_delta: 0.000004000, tcp.analysis.bytes_in_flight: 150420, tcp.analysis.push_bytes_sent: 44472, tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "sftp"
+      }
+    },
+    {
+      "sample_id": "EVD_0017",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: May 23, 2015 03:26:53.958831000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1432322813.958831000, frame.time_delta: 0.263112000, frame.time_relative: 302.222830000, frame.number: 81076, frame.len: 52, frame.marked: 0, frame.protocols: raw:ip:tcp, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x08, ip.dsfield.dscp: 2, ip.dsfield.ecn: 0, ip.len: 52, ip.id: 0x6669, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 40, ip.proto: 6, ip.checksum: 0xf34f, ip.checksum.status: 2, ip.src: 75.101.155.12, ip.dst: 10.8.8.138, tcp.srcport: 22, tcp.dstport: 43336, tcp.stream: 0, tcp.completeness: 15, tcp.len: 0, tcp.seq: 360267, tcp.nxtseq: 360267, tcp.ack: 66809020, tcp.hdr_len: 32, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 2032256, tcp.window_size_scalefactor: 128, tcp.checksum: 0xdaf4, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 302.222830000, tcp.time_delta: 0.263112000, tcp.analysis.bytes_in_flight: , tcp.analysis.push_bytes_sent: , tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "sftp"
+      }
+    },
+    {
+      "sample_id": "EVD_0018",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: May 23, 2015 03:22:56.348006000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1432322576.348006000, frame.time_delta: 0.000008000, frame.time_relative: 64.612005000, frame.number: 24524, frame.len: 52, frame.marked: 0, frame.protocols: raw:ip:tcp, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x08, ip.dsfield.dscp: 2, ip.dsfield.ecn: 0, ip.len: 52, ip.id: 0x1850, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 40, ip.proto: 6, ip.checksum: 0x4169, ip.checksum.status: 2, ip.src: 75.101.155.12, ip.dst: 10.8.8.138, tcp.srcport: 22, tcp.dstport: 43336, tcp.stream: 0, tcp.completeness: 15, tcp.len: 0, tcp.seq: 109075, tcp.nxtseq: 109075, tcp.ack: 19783748, tcp.hdr_len: 32, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 1611264, tcp.window_size_scalefactor: 128, tcp.checksum: 0x1c5e, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 64.612005000, tcp.time_delta: 0.000008000, tcp.analysis.bytes_in_flight: , tcp.analysis.push_bytes_sent: , tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "sftp"
+      }
+    },
+    {
+      "sample_id": "EVD_0019",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: May 25, 2015 03:05:55.213155000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1432494355.213155000, frame.time_delta: 0.000005000, frame.time_relative: 53.654258000, frame.number: 2103, frame.len: 52, frame.marked: 0, frame.protocols: raw:ip:tcp, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 52, ip.id: 0xde82, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 64, ip.proto: 6, ip.checksum: 0x7dc5, ip.checksum.status: 2, ip.src: 10.8.8.138, ip.dst: 208.117.251.116, tcp.srcport: 56623, tcp.dstport: 443, tcp.stream: 0, tcp.completeness: 15, tcp.len: 0, tcp.seq: 4497, tcp.nxtseq: 4497, tcp.ack: 1587790, tcp.hdr_len: 32, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 1453824, tcp.window_size_scalefactor: 128, tcp.checksum: 0xa062, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 53.654258000, tcp.time_delta: 0.000005000, tcp.analysis.bytes_in_flight: , tcp.analysis.push_bytes_sent: , tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "youtube"
+      }
+    },
+    {
+      "sample_id": "EVD_0020",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: May 25, 2015 02:33:43.632965000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1432492423.632965000, frame.time_delta: 0.000277000, frame.time_relative: 81.465272000, frame.number: 14348, frame.len: 1360, frame.marked: 0, frame.protocols: raw:ip:tcp, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x48, ip.dsfield.dscp: 18, ip.dsfield.ecn: 0, ip.len: 1360, ip.id: 0xb48d, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 48, ip.proto: 6, ip.checksum: 0xb256, ip.checksum.status: 2, ip.src: 208.117.251.116, ip.dst: 10.8.8.138, tcp.srcport: 443, tcp.dstport: 56550, tcp.stream: 0, tcp.completeness: 12, tcp.len: 1308, tcp.seq: 12275292, tcp.nxtseq: 12276600, tcp.ack: 26149, tcp.hdr_len: 32, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 775, tcp.window_size_scalefactor: -1, tcp.checksum: 0xea52, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 81.465272000, tcp.time_delta: 0.000277000, tcp.analysis.bytes_in_flight: 2616, tcp.analysis.push_bytes_sent: 971844, tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "youtube"
+      }
+    },
+    {
+      "sample_id": "EVD_0021",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: May 25, 2015 02:36:40.299258000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1432492600.299258000, frame.time_delta: 0.000008000, frame.time_relative: 258.131565000, frame.number: 32791, frame.len: 72, frame.marked: 0, frame.protocols: raw:ip:tcp, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 72, ip.id: 0x6ed3, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 64, ip.proto: 6, ip.checksum: 0xed60, ip.checksum.status: 2, ip.src: 10.8.8.138, ip.dst: 208.117.251.116, tcp.srcport: 56550, tcp.dstport: 443, tcp.stream: 0, tcp.completeness: 12, tcp.len: 0, tcp.seq: 56254, tcp.nxtseq: 56254, tcp.ack: 27149891, tcp.hdr_len: 52, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 24397, tcp.window_size_scalefactor: -1, tcp.checksum: 0x07c6, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 258.131565000, tcp.time_delta: 0.000008000, tcp.analysis.bytes_in_flight: , tcp.analysis.push_bytes_sent: , tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "youtube"
+      }
+    },
+    {
+      "sample_id": "EVD_0022",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: Jun  4, 2015 03:11:17.870912000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1433358677.870912000, frame.time_delta: 1.755020000, frame.time_relative: 623.005425000, frame.number: 1796, frame.len: 78, frame.marked: 0, frame.protocols: raw:ip:tcp:tls, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 78, ip.id: 0x7b29, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 108, ip.proto: 6, ip.checksum: 0xbb3f, ip.checksum.status: 2, ip.src: 178.237.18.202, ip.dst: 10.8.8.130, tcp.srcport: 443, tcp.dstport: 34342, tcp.stream: 0, tcp.completeness: 12, tcp.len: 38, tcp.seq: 83630, tcp.nxtseq: 83668, tcp.ack: 24362, tcp.hdr_len: 20, tcp.flags: 0x0018, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 1, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······AP···, tcp.window_size: 16384, tcp.window_size_scalefactor: -1, tcp.checksum: 0x96da, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 623.005425000, tcp.time_delta: 1.755020000, tcp.analysis.bytes_in_flight: 38, tcp.analysis.push_bytes_sent: 38, tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "icq"
+      }
+    },
+    {
+      "sample_id": "EVD_0023",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: Jun  4, 2015 03:14:54.802602000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1433358894.802602000, frame.time_delta: 0.079569000, frame.time_relative: 839.023168000, frame.number: 2574, frame.len: 78, frame.marked: 0, frame.protocols: raw:ip:tcp:tls, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 78, ip.id: 0xcf28, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 108, ip.proto: 6, ip.checksum: 0x6873, ip.checksum.status: 2, ip.src: 178.237.17.103, ip.dst: 10.8.8.178, tcp.srcport: 443, tcp.dstport: 51318, tcp.stream: 0, tcp.completeness: 12, tcp.len: 38, tcp.seq: 118596, tcp.nxtseq: 118634, tcp.ack: 30141, tcp.hdr_len: 20, tcp.flags: 0x0018, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 1, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······AP···, tcp.window_size: 16384, tcp.window_size_scalefactor: -1, tcp.checksum: 0x211b, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 839.023168000, tcp.time_delta: 0.079569000, tcp.analysis.bytes_in_flight: 38, tcp.analysis.push_bytes_sent: 38, tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "icq"
+      }
+    },
+    {
+      "sample_id": "EVD_0024",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: Jun  4, 2015 03:13:18.528890000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1433358798.528890000, frame.time_delta: 0.023051000, frame.time_relative: 742.749456000, frame.number: 2216, frame.len: 249, frame.marked: 0, frame.protocols: raw:ip:tcp:tls, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 249, ip.id: 0x7972, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 108, ip.proto: 6, ip.checksum: 0xbd7e, ip.checksum.status: 2, ip.src: 178.237.17.103, ip.dst: 10.8.8.178, tcp.srcport: 443, tcp.dstport: 51318, tcp.stream: 0, tcp.completeness: 12, tcp.len: 209, tcp.seq: 103920, tcp.nxtseq: 104129, tcp.ack: 26356, tcp.hdr_len: 20, tcp.flags: 0x0018, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 1, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······AP···, tcp.window_size: 16384, tcp.window_size_scalefactor: -1, tcp.checksum: 0x4f85, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 742.749456000, tcp.time_delta: 0.023051000, tcp.analysis.bytes_in_flight: 209, tcp.analysis.push_bytes_sent: 209, tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "icq"
+      }
+    },
+    {
+      "sample_id": "EVD_0025",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: May 25, 2015 01:12:54.433466000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1432487574.433466000, frame.time_delta: 0.000054000, frame.time_relative: 561.250296000, frame.number: 317179, frame.len: 1360, frame.marked: 0, frame.protocols: raw:ip:tcp, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x48, ip.dsfield.dscp: 18, ip.dsfield.ecn: 0, ip.len: 1360, ip.id: 0x115d, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 51, ip.proto: 6, ip.checksum: 0x88e5, ip.checksum.status: 2, ip.src: 185.2.220.137, ip.dst: 10.8.8.138, tcp.srcport: 80, tcp.dstport: 43533, tcp.stream: 0, tcp.completeness: 15, tcp.len: 1308, tcp.seq: 273328328, tcp.nxtseq: 273329636, tcp.ack: 162825, tcp.hdr_len: 32, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 1048576, tcp.window_size_scalefactor: 512, tcp.checksum: 0x7bd5, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 561.250296000, tcp.time_delta: 0.000054000, tcp.analysis.bytes_in_flight: 1308, tcp.analysis.push_bytes_sent: 95484, tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "netflix"
+      }
+    },
+    {
+      "sample_id": "EVD_0026",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: May 25, 2015 01:04:34.771483000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1432487074.771483000, frame.time_delta: 0.000048000, frame.time_relative: 61.588313000, frame.number: 52534, frame.len: 1360, frame.marked: 0, frame.protocols: raw:ip:tcp, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x48, ip.dsfield.dscp: 18, ip.dsfield.ecn: 0, ip.len: 1360, ip.id: 0xec83, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 51, ip.proto: 6, ip.checksum: 0xadbe, ip.checksum.status: 2, ip.src: 185.2.220.137, ip.dst: 10.8.8.138, tcp.srcport: 80, tcp.dstport: 43533, tcp.stream: 0, tcp.completeness: 15, tcp.len: 1308, tcp.seq: 44979092, tcp.nxtseq: 44980400, tcp.ack: 38594, tcp.hdr_len: 32, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 1048576, tcp.window_size_scalefactor: 512, tcp.checksum: 0x3d4a, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 61.588313000, tcp.time_delta: 0.000048000, tcp.analysis.bytes_in_flight: 2616, tcp.analysis.push_bytes_sent: 882900, tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "netflix"
+      }
+    },
+    {
+      "sample_id": "EVD_0027",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: May 25, 2015 01:14:39.116969000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1432487679.116969000, frame.time_delta: 0.000007000, frame.time_relative: 665.933799000, frame.number: 364980, frame.len: 52, frame.marked: 0, frame.protocols: raw:ip:tcp, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 52, ip.id: 0x1722, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 64, ip.proto: 6, ip.checksum: 0x7b84, ip.checksum.status: 2, ip.src: 10.8.8.138, ip.dst: 185.2.220.137, tcp.srcport: 43533, tcp.dstport: 80, tcp.stream: 0, tcp.completeness: 15, tcp.len: 0, tcp.seq: 184884, tcp.nxtseq: 184884, tcp.ack: 314369656, tcp.hdr_len: 32, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 1698560, tcp.window_size_scalefactor: 128, tcp.checksum: 0x934e, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 665.933799000, tcp.time_delta: 0.000007000, tcp.analysis.bytes_in_flight: , tcp.analysis.push_bytes_sent: , tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "netflix"
+      }
+    },
+    {
+      "sample_id": "EVD_0028",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: Apr 15, 2015 04:11:44.445071000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1429042304.445071000, frame.time_delta: 0.000983000, frame.time_relative: 0.052386000, frame.number: 6, frame.len: 1390, frame.marked: 0, frame.protocols: raw:ip:tcp:tls, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 1390, ip.id: 0x2582, ip.flags: 0x00, ip.flags.rb: 0, ip.flags.df: 0, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 54, ip.proto: 6, ip.checksum: 0x2725, ip.checksum.status: 2, ip.src: 173.194.123.15, ip.dst: 10.8.0.10, tcp.srcport: 443, tcp.dstport: 35346, tcp.stream: 0, tcp.completeness: 15, tcp.len: 1338, tcp.seq: 1, tcp.nxtseq: 1339, tcp.ack: 200, tcp.hdr_len: 32, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 43648, tcp.window_size_scalefactor: 128, tcp.checksum: 0x6f3d, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 0.052386000, tcp.time_delta: 0.000983000, tcp.analysis.bytes_in_flight: 1338, tcp.analysis.push_bytes_sent: 1338, tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: 22, tls.record.version: 0x0303, tls.record.length: 80."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "facebook"
+      }
+    },
+    {
+      "sample_id": "EVD_0029",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: Apr 15, 2015 04:11:41.131599000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1429042301.131599000, frame.time_delta: 0.000020000, frame.time_relative: 0.052635000, frame.number: 9, frame.len: 52, frame.marked: 0, frame.protocols: raw:ip:tcp, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 52, ip.id: 0xf9d9, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 64, ip.proto: 6, ip.checksum: 0x0df7, ip.checksum.status: 2, ip.src: 10.8.0.10, ip.dst: 173.194.123.31, tcp.srcport: 37187, tcp.dstport: 443, tcp.stream: 0, tcp.completeness: 15, tcp.len: 0, tcp.seq: 200, tcp.nxtseq: 200, tcp.ack: 2677, tcp.hdr_len: 32, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 35072, tcp.window_size_scalefactor: 128, tcp.checksum: 0xb11c, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 0.052635000, tcp.time_delta: 0.000020000, tcp.analysis.bytes_in_flight: , tcp.analysis.push_bytes_sent: , tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "facebook"
+      }
+    },
+    {
+      "sample_id": "EVD_0030",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: Apr 15, 2015 04:11:54.101117000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1429042314.101117000, frame.time_delta: 0.000031000, frame.time_relative: 14.809326000, frame.number: 1235, frame.len: 52, frame.marked: 0, frame.protocols: raw:ip:tcp, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 52, ip.id: 0x0d9b, ip.flags: 0x00, ip.flags.rb: 0, ip.flags.df: 0, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 54, ip.proto: 6, ip.checksum: 0x4085, ip.checksum.status: 2, ip.src: 74.125.226.21, ip.dst: 10.8.0.10, tcp.srcport: 443, tcp.dstport: 36636, tcp.stream: 0, tcp.completeness: 15, tcp.len: 0, tcp.seq: 705683, tcp.nxtseq: 705683, tcp.ack: 73066, tcp.hdr_len: 32, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 202368, tcp.window_size_scalefactor: 128, tcp.checksum: 0xa24e, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 14.809326000, tcp.time_delta: 0.000031000, tcp.analysis.bytes_in_flight: , tcp.analysis.push_bytes_sent: , tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "facebook"
+      }
+    },
+    {
+      "sample_id": "EVD_0031",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: Jun  4, 2015 01:35:15.740658000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1433352915.740658000, frame.time_delta: 0.180402000, frame.time_relative: 201.005691000, frame.number: 145, frame.len: 745, frame.marked: 0, frame.protocols: raw:ip:tcp:tls, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 745, ip.id: 0x358b, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 64, ip.proto: 6, ip.checksum: 0x5006, ip.checksum.status: 2, ip.src: 10.8.8.178, ip.dst: 134.170.25.26, tcp.srcport: 54269, tcp.dstport: 443, tcp.stream: 0, tcp.completeness: 12, tcp.len: 693, tcp.seq: 25834, tcp.nxtseq: 26527, tcp.ack: 8424, tcp.hdr_len: 32, tcp.flags: 0x0018, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 1, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······AP···, tcp.window_size: 65400, tcp.window_size_scalefactor: -1, tcp.checksum: 0x2e65, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 201.005691000, tcp.time_delta: 0.180402000, tcp.analysis.bytes_in_flight: 693, tcp.analysis.push_bytes_sent: 693, tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: 23, tls.record.version: 0x0301, tls.record.length: 688."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "skype"
+      }
+    },
+    {
+      "sample_id": "EVD_0032",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: Jun  5, 2015 21:54:16.024991000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1433512456.024991000, frame.time_delta: 0.000034000, frame.time_relative: 234.246770000, frame.number: 1028, frame.len: 52, frame.marked: 0, frame.protocols: raw:ip:tcp, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 52, ip.id: 0x0c82, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 64, ip.proto: 6, ip.checksum: 0x9124, ip.checksum.status: 2, ip.src: 10.8.8.130, ip.dst: 130.88.8.60, tcp.srcport: 42490, tcp.dstport: 56289, tcp.stream: 0, tcp.completeness: 12, tcp.len: 0, tcp.seq: 52085, tcp.nxtseq: 52085, tcp.ack: 78214, tcp.hdr_len: 32, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 1444, tcp.window_size_scalefactor: -1, tcp.checksum: 0xff83, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 234.246770000, tcp.time_delta: 0.000034000, tcp.analysis.bytes_in_flight: , tcp.analysis.push_bytes_sent: , tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "skype"
+      }
+    },
+    {
+      "sample_id": "EVD_0033",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: Jun  5, 2015 22:20:29.531445000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1433514029.531445000, frame.time_delta: 0.000192000, frame.time_relative: 16.614805000, frame.number: 411, frame.len: 56, frame.marked: 0, frame.protocols: raw:ip:tcp:data, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 56, ip.id: 0x943c, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 64, ip.proto: 6, ip.checksum: 0xe730, ip.checksum.status: 2, ip.src: 10.8.8.134, ip.dst: 129.98.43.99, tcp.srcport: 39081, tcp.dstport: 24011, tcp.stream: 0, tcp.completeness: 15, tcp.len: 4, tcp.seq: 53236, tcp.nxtseq: 53240, tcp.ack: 5982, tcp.hdr_len: 32, tcp.flags: 0x0018, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 1, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······AP···, tcp.window_size: 38784, tcp.window_size_scalefactor: 128, tcp.checksum: 0xae35, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 16.614805000, tcp.time_delta: 0.000192000, tcp.analysis.bytes_in_flight: 4, tcp.analysis.push_bytes_sent: 4, tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "skype"
+      }
+    },
+    {
+      "sample_id": "EVD_0034",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 1, frame.time: May 23, 2015 00:49:22.505624000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1432313362.505624000, frame.time_delta: 0.000029000, frame.time_relative: 10.555507000, frame.number: 258, frame.len: 54, frame.marked: 0, frame.protocols: eth:ethertype:ip:tcp, eth.dst: 00:ff:c2:e4:8c:db, eth.dst_resolved: 00:ff:c2:e4:8c:db, eth.dst.oui: 65474, eth.dst.oui_resolved: , eth.dst.lg: 0, eth.dst.ig: 0, eth.src: 00:ff:c1:e4:8c:db, eth.src_resolved: 00:ff:c1:e4:8c:db, eth.src.oui: 65473, eth.src.oui_resolved: , eth.src.lg: 0, eth.src.ig: 0, eth.type: 0x0800, ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 40, ip.id: 0x3c00, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 128, ip.proto: 6, ip.checksum: 0x2206, ip.checksum.status: 2, ip.src: 10.8.8.222, ip.dst: 131.202.6.26, tcp.srcport: 61105, tcp.dstport: 13000, tcp.stream: 0, tcp.completeness: 15, tcp.len: 0, tcp.seq: 13676, tcp.nxtseq: 13676, tcp.ack: 179198, tcp.hdr_len: 20, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 65536, tcp.window_size_scalefactor: 2, tcp.checksum: 0xebfd, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 10.555507000, tcp.time_delta: 0.000029000, tcp.analysis.bytes_in_flight: , tcp.analysis.push_bytes_sent: , tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "voipbuster"
+      }
+    },
+    {
+      "sample_id": "EVD_0035",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 1, frame.time: May 23, 2015 00:51:06.372093000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1432313466.372093000, frame.time_delta: 0.000092000, frame.time_relative: 4.192672000, frame.number: 212, frame.len: 1374, frame.marked: 0, frame.protocols: eth:ethertype:ip:tcp, eth.dst: 00:ff:c1:e4:8c:db, eth.dst_resolved: 00:ff:c1:e4:8c:db, eth.dst.oui: 65473, eth.dst.oui_resolved: , eth.dst.lg: 0, eth.dst.ig: 0, eth.src: 00:ff:c2:e4:8c:db, eth.src_resolved: 00:ff:c2:e4:8c:db, eth.src.oui: 65474, eth.src.oui_resolved: , eth.src.lg: 0, eth.src.ig: 0, eth.type: 0x0800, ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 1360, ip.id: 0xc89c, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 243, ip.proto: 6, ip.checksum: 0xf8ca, ip.checksum.status: 2, ip.src: 161.69.13.21, ip.dst: 10.8.8.222, tcp.srcport: 443, tcp.dstport: 61114, tcp.stream: 0, tcp.completeness: 15, tcp.len: 1320, tcp.seq: 165478, tcp.nxtseq: 166798, tcp.ack: 970, tcp.hdr_len: 20, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 4929, tcp.window_size_scalefactor: -2, tcp.checksum: 0xd93c, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 4.192672000, tcp.time_delta: 0.000092000, tcp.analysis.bytes_in_flight: 1320, tcp.analysis.push_bytes_sent: 2640, tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "voipbuster"
+      }
+    },
+    {
+      "sample_id": "EVD_0036",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 1, frame.time: May 23, 2015 00:49:24.234207000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1432313364.234207000, frame.time_delta: 0.000026000, frame.time_relative: 12.284090000, frame.number: 481, frame.len: 54, frame.marked: 0, frame.protocols: eth:ethertype:ip:tcp, eth.dst: 00:ff:c2:e4:8c:db, eth.dst_resolved: 00:ff:c2:e4:8c:db, eth.dst.oui: 65474, eth.dst.oui_resolved: , eth.dst.lg: 0, eth.dst.ig: 0, eth.src: 00:ff:c1:e4:8c:db, eth.src_resolved: 00:ff:c1:e4:8c:db, eth.src.oui: 65473, eth.src.oui_resolved: , eth.src.lg: 0, eth.src.ig: 0, eth.type: 0x0800, ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 40, ip.id: 0x3c4d, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 128, ip.proto: 6, ip.checksum: 0x21b9, ip.checksum.status: 2, ip.src: 10.8.8.222, ip.dst: 131.202.6.26, tcp.srcport: 61105, tcp.dstport: 13000, tcp.stream: 0, tcp.completeness: 15, tcp.len: 0, tcp.seq: 16314, tcp.nxtseq: 16314, tcp.ack: 360294, tcp.hdr_len: 20, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 65536, tcp.window_size_scalefactor: 2, tcp.checksum: 0x1e45, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 12.284090000, tcp.time_delta: 0.000026000, tcp.analysis.bytes_in_flight: , tcp.analysis.push_bytes_sent: , tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "voipbuster"
+      }
+    },
+    {
+      "sample_id": "EVD_0037",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: Jun  8, 2015 22:32:27.683968000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1433773947.683968000, frame.time_delta: 0.131269000, frame.time_relative: 0.906009000, frame.number: 16, frame.len: 52, frame.marked: 0, frame.protocols: raw:ip:tcp, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 52, ip.id: 0xfcac, ip.flags: 0x00, ip.flags.rb: 0, ip.flags.df: 0, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 41, ip.proto: 6, ip.checksum: 0x89a8, ip.checksum.status: 2, ip.src: 64.233.184.16, ip.dst: 10.8.8.110, tcp.srcport: 465, tcp.dstport: 37414, tcp.stream: 0, tcp.completeness: 15, tcp.len: 0, tcp.seq: 505, tcp.nxtseq: 505, tcp.ack: 770, tcp.hdr_len: 32, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 43648, tcp.window_size_scalefactor: 128, tcp.checksum: 0x862d, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 0.906009000, tcp.time_delta: 0.131269000, tcp.analysis.bytes_in_flight: , tcp.analysis.push_bytes_sent: , tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "email"
+      }
+    },
+    {
+      "sample_id": "EVD_0038",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: Jun  8, 2015 22:27:58.910706000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1433773678.910706000, frame.time_delta: 0.000008000, frame.time_relative: 33.326259000, frame.number: 4737, frame.len: 52, frame.marked: 0, frame.protocols: raw:ip:tcp, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 52, ip.id: 0x36c7, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 64, ip.proto: 6, ip.checksum: 0x217e, ip.checksum.status: 2, ip.src: 10.8.8.234, ip.dst: 74.125.133.16, tcp.srcport: 51056, tcp.dstport: 993, tcp.stream: 0, tcp.completeness: 12, tcp.len: 0, tcp.seq: 3711, tcp.nxtseq: 3711, tcp.ack: 3567842, tcp.hdr_len: 32, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 1796, tcp.window_size_scalefactor: -1, tcp.checksum: 0x8627, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 33.326259000, tcp.time_delta: 0.000008000, tcp.analysis.bytes_in_flight: , tcp.analysis.push_bytes_sent: , tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "email"
+      }
+    },
+    {
+      "sample_id": "EVD_0039",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: Jun  8, 2015 22:28:25.972491000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1433773705.972491000, frame.time_delta: 0.140339000, frame.time_relative: 60.388044000, frame.number: 6326, frame.len: 52, frame.marked: 0, frame.protocols: raw:ip:tcp, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 52, ip.id: 0x35a8, ip.flags: 0x00, ip.flags.rb: 0, ip.flags.df: 0, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 43, ip.proto: 6, ip.checksum: 0x779d, ip.checksum.status: 2, ip.src: 74.125.133.16, ip.dst: 10.8.8.234, tcp.srcport: 993, tcp.dstport: 51056, tcp.stream: 0, tcp.completeness: 12, tcp.len: 0, tcp.seq: 4626287, tcp.nxtseq: 4626287, tcp.ack: 6730, tcp.hdr_len: 32, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 350, tcp.window_size_scalefactor: -1, tcp.checksum: 0xd55d, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 60.388044000, tcp.time_delta: 0.140339000, tcp.analysis.bytes_in_flight: , tcp.analysis.push_bytes_sent: , tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "email"
+      }
+    },
+    {
+      "sample_id": "EVD_0040",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: Jun  4, 2015 02:51:31.536032000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1433357491.536032000, frame.time_delta: 29.831273000, frame.time_relative: 660.000168000, frame.number: 47, frame.len: 46, frame.marked: 0, frame.protocols: raw:ip:tcp:tls, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 46, ip.id: 0x06ac, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 64, ip.proto: 6, ip.checksum: 0x5ac4, ip.checksum.status: 2, ip.src: 10.8.8.130, ip.dst: 178.237.19.227, tcp.srcport: 48410, tcp.dstport: 443, tcp.stream: 0, tcp.completeness: 12, tcp.len: 6, tcp.seq: 133, tcp.nxtseq: 139, tcp.ack: 1, tcp.hdr_len: 20, tcp.flags: 0x0018, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 1, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······AP···, tcp.window_size: 34481, tcp.window_size_scalefactor: -1, tcp.checksum: 0x73fa, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 660.000168000, tcp.time_delta: 29.831273000, tcp.analysis.bytes_in_flight: 6, tcp.analysis.push_bytes_sent: 6, tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "aim"
+      }
+    },
+    {
+      "sample_id": "EVD_0041",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: Jun  4, 2015 02:52:16.716427000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1433357536.716427000, frame.time_delta: 0.000028000, frame.time_relative: 715.088391000, frame.number: 733, frame.len: 40, frame.marked: 0, frame.protocols: raw:ip:tcp, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 40, ip.id: 0xe27f, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 64, ip.proto: 6, ip.checksum: 0x6bdf, ip.checksum.status: 2, ip.src: 10.8.8.130, ip.dst: 205.188.12.43, tcp.srcport: 44917, tcp.dstport: 443, tcp.stream: 0, tcp.completeness: 12, tcp.len: 0, tcp.seq: 27401, tcp.nxtseq: 27401, tcp.ack: 46649, tcp.hdr_len: 20, tcp.flags: 0x0010, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 0, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······A····, tcp.window_size: 64680, tcp.window_size_scalefactor: -1, tcp.checksum: 0x3072, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 715.088391000, tcp.time_delta: 0.000028000, tcp.analysis.bytes_in_flight: , tcp.analysis.push_bytes_sent: , tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: , tls.record.version: , tls.record.length: ."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "aim"
+      }
+    },
+    {
+      "sample_id": "EVD_0042",
+      "task_name": "Encrypted VPN Detection",
+      "task_key": "EVD",
+      "user_input": {
+        "traffic_data": "<packet>:frame.encap_type: 7, frame.time: Jun  4, 2015 02:52:24.718858000 CST, frame.offset_shift: 0.000000000, frame.time_epoch: 1433357544.718858000, frame.time_delta: 0.000057000, frame.time_relative: 722.879308000, frame.number: 691, frame.len: 162, frame.marked: 0, frame.protocols: raw:ip:tcp:tls, eth.dst: , eth.dst_resolved: , eth.dst.oui: , eth.dst.oui_resolved: , eth.dst.lg: , eth.dst.ig: , eth.src: , eth.src_resolved: , eth.src.oui: , eth.src.oui_resolved: , eth.src.lg: , eth.src.ig: , eth.type: , ip.version: 4, ip.hdr_len: 20, ip.dsfield: 0x00, ip.dsfield.dscp: 0, ip.dsfield.ecn: 0, ip.len: 162, ip.id: 0xcd0b, ip.flags: 0x40, ip.flags.rb: 0, ip.flags.df: 1, ip.flags.mf: 0, ip.frag_offset: 0, ip.ttl: 64, ip.proto: 6, ip.checksum: 0x8079, ip.checksum.status: 2, ip.src: 10.8.8.178, ip.dst: 205.188.12.91, tcp.srcport: 48911, tcp.dstport: 443, tcp.stream: 0, tcp.completeness: 12, tcp.len: 122, tcp.seq: 18371, tcp.nxtseq: 18493, tcp.ack: 50393, tcp.hdr_len: 20, tcp.flags: 0x0018, tcp.flags.res: 0, tcp.flags.ns: 0, tcp.flags.cwr: 0, tcp.flags.ecn: 0, tcp.flags.urg: 0, tcp.flags.ack: 1, tcp.flags.push: 1, tcp.flags.reset: 0, tcp.flags.syn: 0, tcp.flags.fin: 0, tcp.flags.str: ·······AP···, tcp.window_size: 64680, tcp.window_size_scalefactor: -1, tcp.checksum: 0x3277, tcp.checksum.status: 2, tcp.urgent_pointer: 0, tcp.time_relative: 722.879308000, tcp.time_delta: 0.000057000, tcp.analysis.bytes_in_flight: 122, tcp.analysis.push_bytes_sent: 122, tcp.segment: , tcp.segment.count: , tcp.reassembled.length: , tls.record.content_type: 23,23, tls.record.version: 0x0301,0x0301, tls.record.length: 32,80."
+      },
+      "expected_output": {
+        "stage1_task_name": "Encrypted VPN Detection",
+        "stage1_task_key": "EVD",
+        "stage2_answer": "aim"
+      }
+    }
+  ]
+}

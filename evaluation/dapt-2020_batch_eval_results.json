@@ -1,0 +1,795 @@
+{
+  "constraints": {
+    "min_accuracy": 0.95,
+    "min_precision": 0.95,
+    "min_recall": 0.95
+  },
+  "best_checkpoint": {
+    "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-1500",
+    "passed_constraints": true,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "confusion_matrix": [
+      [
+        250,
+        0
+      ],
+      [
+        0,
+        250
+      ]
+    ],
+    "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+  },
+  "all_results": [
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-500",
+      "passed_constraints": false,
+      "accuracy": 0.768,
+      "precision": 0.8294909119521598,
+      "recall": 0.768,
+      "f1": 0.7566460794844254,
+      "confusion_matrix": [
+        [
+          246,
+          4
+        ],
+        [
+          112,
+          138
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       0.69      0.98      0.81       250\n           1       0.97      0.55      0.70       250\n\n    accuracy                           0.77       500\n   macro avg       0.83      0.77      0.76       500\nweighted avg       0.83      0.77      0.76       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-1000",
+      "passed_constraints": true,
+      "accuracy": 0.988,
+      "precision": 0.9901960784313726,
+      "recall": 0.988,
+      "f1": 0.9889766304565678,
+      "confusion_matrix": [
+        [
+          250,
+          0,
+          0
+        ],
+        [
+          5,
+          244,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       0.98      1.00      0.99       250\n           1       1.00      0.98      0.99       250\n           2       0.00      0.00      0.00         0\n\n    accuracy                           0.99       500\n   macro avg       0.66      0.66      0.66       500\nweighted avg       0.99      0.99      0.99       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-1500",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-2000",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-2500",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-3000",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-3500",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-4000",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-4500",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-5000",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-5500",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-6000",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-6500",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-7000",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-7500",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-8000",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-8500",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-9000",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-9500",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-10000",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-10500",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-11000",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-11500",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-12000",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-12500",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-13000",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-13500",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-14000",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-14500",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-15000",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-15500",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-16000",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-16500",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-17000",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-17500",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-18000",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-18500",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-19000",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-19500",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    },
+    {
+      "checkpoint": "./models/glm-4-9b-chat-lora/dapt-2020_detection_packet/checkpoint-20000",
+      "passed_constraints": true,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": [
+        [
+          250,
+          0
+        ],
+        [
+          0,
+          250
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00       250\n           1       1.00      1.00      1.00       250\n\n    accuracy                           1.00       500\n   macro avg       1.00      1.00      1.00       500\nweighted avg       1.00      1.00      1.00       500\n"
+    }
+  ]
+}
