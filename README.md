@@ -5,6 +5,8 @@
 > 2. 使用 GLM-4-9b-chat 模型替代原文的 ChatGLM2 （替原文做了训练），其分词器已经很强大（有心人/追求严谨之人请做去除分词器适配训练与否的对比实验），所以去除了流量领域的分词器适配训练。
 > 3. 使用 Codex-gpt 5.3 对原链接中几乎所有的代码进行了重构。
 > 4. 替原文为 GLM-4-9b-chat 做了适配的数据集。
+> 5. 提供了一份适合中国宝宝体质且描述解释本项目的[论文](https://github.com/AASWEETBOY/TrafficLLM/releases/download/v0.0.1/xyz0721.7z)（写的质量一般般，仅供参考）。
+> 6. 更新项目的requirements.txt，避免训练/运行时报错。
 
 TrafficLLM 是一个面向网络流量智能分析的多任务大语言模型系统，围绕加密流量场景构建了从数据处理、参数高效微调、模型评估到在线服务的完整工程闭环。项目基于 GLM-4 系列基座模型，采用 LoRA/PEFT 方式实现低成本适配，支持多类安全任务统一建模与部署。
 
@@ -331,3 +333,4 @@ streamlit run trafficllm_server.py --server.port 8501
 1. [ ZGC-LLM-Safety 的 TrafficLLM ](https://github.com/ZGC-LLM-Safety/TrafficLLM)
 2. [ xyz0721（本人）](https://github.com/AASWEETBOY)
 3. Codex-ChatGPT 5.3
+4. Claude Sonnet 4.6
