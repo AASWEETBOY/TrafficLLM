@@ -1,6 +1,10 @@
 # TrafficLLM 项目说明
 
-> 对[ZGC-LLM-Safety 的 TrafficLLM](https://github.com/ZGC-LLM-Safety/TrafficLLM)进行增强
+> 对[ ZGC-LLM-Safety 的 TrafficLLM ](https://github.com/ZGC-LLM-Safety/TrafficLLM)进行增强，具体增强点如下：
+> 1. 将 APEFT——Adaptive Parameter-Effective Fine-Tuning （即原文 EA-PEFT ）和双阶段微调流水线合并，其实就是 APEFT 调用相应双阶段微调脚本。原文竟把这二者分成两个部分，会把人绕晕。
+> 2. 使用 GLM-4-9b-chat 模型替代原文的 ChatGLM2 （替原文做了训练），其分词器已经很强大（有心人/追求严谨之人请做去除分词器适配训练与否的对比实验），所以去除了流量领域的分词器适配训练。
+> 3. 使用 Codex-gpt 5.3 对原链接中几乎所有的代码进行了重构。
+> 4. 替原文为 GLM-4-9b-chat 做了适配的数据集。
 
 TrafficLLM 是一个面向网络流量智能分析的多任务大语言模型系统，围绕加密流量场景构建了从数据处理、参数高效微调、模型评估到在线服务的完整工程闭环。项目基于 GLM-4 系列基座模型，采用 LoRA/PEFT 方式实现低成本适配，支持多类安全任务统一建模与部署。
 
@@ -242,7 +246,7 @@ TrafficLLM/
 
 ## 四、快速开始（建议）
 
-### 4.1 运行环境配置
+### 4.1 运行环境配置（建议在Ubuntu上使用）
 
 ```bash
 conda create -n trafficllm python=3.9
@@ -254,9 +258,10 @@ cd TrafficLLM
 # Install required libraries
 pip install -r requirements.txt
 ```
+记得把仓库里的压缩包中的文件解压至各自当前目录下（为什么压缩呢？因为所要上传的单个文件不能超过25MB啊！）
 
 ### 4.2 数据预处理
-
+命令示例
 ```bash
 cd preprocess
 python preprocess_stage1.py --help
@@ -264,13 +269,13 @@ python preprocess_stage2.py
 ```
 
 ### 4.3 两阶段训练
-
+命令示例
 ```bash
 python APEFT/apeft.py --dataset=csic-2010
 ```
 
 ### 4.4 批量评估
-
+命令示例
 ```bash
 python evaluation.py \
   --model_name ./models/glm-4-9b-chat \
@@ -299,3 +304,17 @@ streamlit run trafficllm_server.py --server.port 8501
 
 - 本项目默认依赖 GPU 环境进行训练与推理。
 - 各模块目录下已提供更详细的子 ReadMe，可用于深入查看参数与脚本细节。
+
+## 七、项目的不足之处
+
+1. 系统可视化界面拉跨，界面布局一言难尽。建议重构，增强人性化程度。（这是本项目的硬伤，解决了这项目就很“唬人”了）
+2. 数据集原始文件/数据集预处理的逻辑源自[ ZGC-LLM-Safety 的 TrafficLLM ](https://github.com/ZGC-LLM-Safety/TrafficLLM)，本项目缺乏对数据集预处理后的质量进行评估的环节。所以，后续模型评估阶段数据再怎么好看也缺乏一定可信度。
+3. 模型推理延迟高，无法胜任实时任务，有待解决。
+4. 系统对已有数据集耦合度较高（貌似在本项目中训练过拟合），泛化能力（即学习已知数据去预测/判断未知数据）有待进步。
+5. 编写模型训练逻辑时，未对训练过拟合/欠拟合作出评估与处理。
+
+## 八、贡献者
+对下面所列之人/项目予以诚挚的谢意
+1. [ ZGC-LLM-Safety 的 TrafficLLM ](https://github.com/ZGC-LLM-Safety/TrafficLLM)
+2. xyz0721（本人）
+3. Codex-ChatGPT 5.3
