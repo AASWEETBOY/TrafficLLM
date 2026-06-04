@@ -247,18 +247,31 @@ TrafficLLM/
 ## 四、快速开始（建议）
 
 ### 4.1 运行环境配置（建议在Ubuntu上使用）
-
+1. 第一种方法（使用git）
 ```bash
 conda create -n trafficllm python=3.9
-
 conda activate trafficllm
 
 git clone https://github.com/AASWEETBOY/TrafficLLM.git
+
 cd TrafficLLM
 # Install required libraries
 pip install -r requirements.txt
 ```
 记得把仓库里的压缩包中的文件解压至各自当前目录下（为什么压缩呢？因为所要上传的单个文件不能超过25MB啊！）
+
+2. 第二种方法（使用源码压缩包）
+```bash
+conda create -n trafficllm python=3.9
+conda activate trafficllm
+
+#下载源码压缩包（点击下方提示中的链接进行跳转下载），并解压
+
+cd TrafficLLM
+# Install required libraries
+pip install -r requirements.txt
+```
+提示：[源码压缩包](https://github.com/AASWEETBOY/TrafficLLM/releases/download/v1.0.0/TrafficLLM.7z)
 
 ### 4.2 数据预处理
 命令示例
@@ -316,5 +329,5 @@ streamlit run trafficllm_server.py --server.port 8501
 ## 八、贡献者
 对下面所列之人/项目予以诚挚的谢意
 1. [ ZGC-LLM-Safety 的 TrafficLLM ](https://github.com/ZGC-LLM-Safety/TrafficLLM)
-2. xyz0721（本人）
+2. [ xyz0721（本人）](https://github.com/AASWEETBOY)
 3. Codex-ChatGPT 5.3
